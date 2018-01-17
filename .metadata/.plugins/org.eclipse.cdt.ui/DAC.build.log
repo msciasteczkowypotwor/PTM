@@ -1,0 +1,28 @@
+22:53:39 **** Incremental Build of configuration Debug for project DAC ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\MarcinS\workspace\DAC\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F407VGTx -DSTM32F4DISCOVERY -DDEBUG -DSTM32F40XX -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -I"C:/Users/MarcinS/workspace/DAC/Utilities" -I"C:/Users/MarcinS/workspace/DAC/StdPeriph_Driver/inc" -I"C:/Users/MarcinS/workspace/DAC/inc" -I"C:/Users/MarcinS/workspace/DAC/CMSIS/device" -I"C:/Users/MarcinS/workspace/DAC/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:15:0:
+../src/sin.h:3604:3: warning: excess elements in array initializer
+   0.0000000000
+   ^~~~~~~~~~~~
+../src/sin.h:3604:3: note: (near initialization for 'sineWave')
+Finished building: ../src/main.c
+ 
+Building target: DAC.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\MarcinS\workspace\DAC\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "DAC.elf" @"objects.list"   -lm
+Finished building target: DAC.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "DAC.elf" "DAC.bin"
+arm-none-eabi-size "DAC.elf"
+   text	   data	    bss	    dec	    hex	filename
+   6704	  29880	   1128	  37712	   9350	DAC.elf
+ 
+
+22:53:41 Build Finished (took 1s.988ms)
+

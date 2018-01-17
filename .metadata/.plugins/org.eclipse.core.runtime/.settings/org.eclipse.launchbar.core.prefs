@@ -1,0 +1,16 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:TIM_PWM Debug,org.eclipse.launchbar.core.descriptorType.default\:NVIC Debug,org.eclipse.launchbar.core.descriptorType.default\:NVIC_zad1 Run,org.eclipse.launchbar.core.descriptorType.default\:NVIC_zad1 Debug,org.eclipse.launchbar.core.descriptorType.default\:EXTI Debug,org.eclipse.launchbar.core.descriptorType.default\:powt Debug,org.eclipse.launchbar.core.descriptorType.default\:Licznik Debug,org.eclipse.launchbar.core.descriptorType.default\:DAC Debug,org.eclipse.launchbar.core.descriptorType.default\:SPI Debug,org.eclipse.launchbar.core.descriptorType.default\:USART_1 Debug,org.eclipse.launchbar.core.descriptorType.default\:USART_2 Debug,org.eclipse.launchbar.core.descriptorType.default\:USART_3 Debug,org.eclipse.launchbar.core.descriptorType.default\:USART_4 Debug
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:ADC\ Debug/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:ADC\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:DAC\ Debug/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:DAC\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:EXTI\ Debug/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:EXTI\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:Licznik\ Debug/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Licznik\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:NVIC\ Debug/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:NVIC\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:usart\ Debug/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:usart\ Debug/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

@@ -1,0 +1,32 @@
+23:26:55 **** Incremental Build of configuration Debug for project NVIC ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\MarcinS\workspace\NVIC\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F407VGTx -DSTM32F4DISCOVERY -DDEBUG -DSTM32F40XX -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -I"C:/Users/MarcinS/workspace/NVIC/Utilities" -I"C:/Users/MarcinS/workspace/NVIC/StdPeriph_Driver/inc" -I"C:/Users/MarcinS/workspace/NVIC/inc" -I"C:/Users/MarcinS/workspace/NVIC/CMSIS/device" -I"C:/Users/MarcinS/workspace/NVIC/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:49:7: warning: 'TIM2_IRQHandler' defined but not used [-Wunused-function]
+  void TIM2_IRQHandler(void)
+       ^~~~~~~~~~~~~~~
+../src/main.c:34:7: warning: 'TIM4_IRQHandler' defined but not used [-Wunused-function]
+  void TIM4_IRQHandler(void)
+       ^~~~~~~~~~~~~~~
+../src/main.c:19:7: warning: 'TIM3_IRQHandler' defined but not used [-Wunused-function]
+  void TIM3_IRQHandler(void)
+       ^~~~~~~~~~~~~~~
+Finished building: ../src/main.c
+ 
+Building target: NVIC.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\MarcinS\workspace\NVIC\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "NVIC.elf" @"objects.list"   -lm
+Finished building target: NVIC.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "NVIC.elf" "NVIC.bin"
+arm-none-eabi-size "NVIC.elf"
+   text	   data	    bss	    dec	    hex	filename
+   2812	   1080	   1092	   4984	   1378	NVIC.elf
+ 
+
+23:26:57 Build Finished (took 1s.797ms)
+

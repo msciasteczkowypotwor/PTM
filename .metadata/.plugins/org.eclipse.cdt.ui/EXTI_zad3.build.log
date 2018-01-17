@@ -1,0 +1,23 @@
+19:52:00 **** Incremental Build of configuration Debug for project EXTI_zad3 ****
+make all 
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\MarcinS\workspace\EXTI_zad3\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F407VGTx -DSTM32F4DISCOVERY -DDEBUG -DSTM32F40XX -DSTM32F40_41xxx -DUSE_STDPERIPH_DRIVER -I"C:/Users/MarcinS/workspace/EXTI_zad3/Utilities" -I"C:/Users/MarcinS/workspace/EXTI_zad3/StdPeriph_Driver/inc" -I"C:/Users/MarcinS/workspace/EXTI_zad3/inc" -I"C:/Users/MarcinS/workspace/EXTI_zad3/CMSIS/device" -I"C:/Users/MarcinS/workspace/EXTI_zad3/CMSIS/core" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: EXTI_zad3.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\MarcinS\workspace\EXTI_zad3\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "EXTI_zad3.elf" @"objects.list"   -lm
+Finished building target: EXTI_zad3.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "EXTI_zad3.elf" "EXTI_zad3.bin"
+arm-none-eabi-size "EXTI_zad3.elf"
+   text	   data	    bss	    dec	    hex	filename
+   3856	   1080	   1092	   6028	   178c	EXTI_zad3.elf
+ 
+
+19:52:01 Build Finished (took 1s.750ms)
+
