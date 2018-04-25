@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;DAC/src/sin&apos; to &apos;sin.h&apos;" description="Rename resource &apos;sin&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/sin" name="sin.h" stamp="1514077163469" updateReferences="true"/>
-</session>
